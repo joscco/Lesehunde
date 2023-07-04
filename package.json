@@ -1,5 +1,5 @@
 {
-  "name": "midcard-website",
+  "name": "lesehunde",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -19,8 +19,6 @@
     "@angular/material": "^13.3.9",
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
-    "@angular/router": "~13.3.0",
-    "playfab-web-sdk": "^1.143.230428",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

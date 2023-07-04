@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MidcardWebsite": {
+    "Lesehunde": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/midcard-website",
+            "outputPath": "dist/lesehunde",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "MidcardWebsite:build:production"
+              "browserTarget": "Lesehunde:build:production"
             },
             "development": {
-              "browserTarget": "MidcardWebsite:build:development"
+              "browserTarget": "Lesehunde:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "MidcardDeckbuilder:build"
+            "browserTarget": "Lesehunde:build"
           }
         },
         "test": {
@@ -104,5 +104,5 @@
       }
     }
   },
-  "defaultProject": "MidcardDeckbuilder"
+  "defaultProject": "Lesehunde"
 }
