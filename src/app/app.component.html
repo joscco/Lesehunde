@@ -1,10 +1,82 @@
-<div class="h-full flex flex-col">
+<div class="h-full">
   <app-navbar></app-navbar>
-  <main class="max-h-screen overflow-y-scroll no-scrollbar snap snap-y snap-mandatory">
-    <section class="w-full h-screen snap-start bg-neutral-800"></section>
-    <section class="w-full h-screen snap-start bg-neutral-400"></section>
-    <section class="w-full h-screen snap-start bg-neutral-600"></section>
-    <section class="w-full h-screen snap-start bg-neutral-300"></section>
+  <main class="h-full w-full overflow-y-scroll scroll-smooth snap snap-y snap-mandatory">
+    <app-section-wrapper id="start">
+      <div class="h-full w-full md:w-1/2 flex flex-col items-center justify-center p-4">
+        <img src="/assets/img.png" class="w-[250px] h-[250px]">
+      </div>
+      <div class="h-full w-full md:w-1/2 flex flex-col items-start justify-center">
+        <h1 class="text-2xl md:text-4xl">Der Lesehund / Zuhörhund</h1>
+        <h2 class="text-neutral-800 text-xl md:text-2xl mt-2">Leseförderung mit Hund</h2>
+        <p class="text-neutral-500 text-sm md:text-base mt-2">
+          Bei diesen Programmen kommen geschulte Hunde in die Büchereien und Schulklassen.
+          Es sind besonders freundliche und ruhige Vierbeiner, die sich neben die Kinder setzen oder legen
+          und ihnen Aufmerksamkeit schenken, während diese ihnen vorlesen.
+        </p>
+        <p class="text-neutral-500 text-sm md:text-base mt-1">
+          Dieses Leseprogramm hat viele Vorzüge gegenüber herkömmlichen Leseförderungsprogrammen und es zeigt
+          sich, dass die Kinder mit der Zeit viel flüssiger lesen können. Das hat seine Gründe.
+        </p>
+      </div>
+    </app-section-wrapper>
+    <app-section-wrapper id="dogs">
+      <div class="h-full w-full md:w-1/2 flex flex-col items-start justify-center">
+        <h2 class="text-neutral-800 text-xl md:text-2xl mt-2">Hunde verbessern nicht:</h2>
+        <p class="text-neutral-500 text-sm md:text-base mt-1">Ein Hund kann nicht unterbrechen und das Gelesene
+          verbessern. Diese Unterbrechungen hemmen den Lesefluss des Kindes. Wenn man es lässt, wird es seinen Weg
+          schon finden.</p>
+        <h2 class="text-neutral-800 text-xl md:text-2xl mt-2">Hunde spotten nicht:</h2>
+        <p class="text-neutral-500 text-sm md:text-base mt-1">Wenn Kinder in der Klasse vorlesen müssen, werden sie
+          manchmal gehänselt - ein Hund kann so etwas nicht
+          machen.</p>
+        <h2 class="text-neutral-800 text-xl md:text-2xl mt-2">Wohlige Atmosphäre:</h2>
+        <p class="text-neutral-500 text-sm md:text-base mt-1">Hunde verbreiten Ruhe. Studien haben bewiesen, dass sich
+          der Blutdruck senkt, wenn man so ein Fellknäuel
+          streichelt, da beruhigende Hormone im Hirn ausgeschüttet werden. Stress wird abgebaut.</p>
+        <p class="text-neutral-500 text-sm md:text-base mt-1">Die Settings werden entsprechend gestaltet, d.h.
+          Kleingruppen (max. 3 Kinder), keine Anwesenheit von
+          Lehrkräften oder Eltern, kuschelige Sitzgelegenheit, Kind, Hund/Hunden und Hundehalter (ggf. noch
+          Betreuungskraft) auf der gleichen Sitzhöhe, geeignetes und ansprechendes Lesematerial.</p>
+      </div>
+    </app-section-wrapper>
+    <app-section-wrapper id="not-dogs">
+      <div class="h-full w-full md:w-1/2 flex flex-col items-start justify-center">
+        <h2 class="text-neutral-800 text-xl md:text-2xl mt-2">Was wird gefördert?</h2>
+        <ul>
+          <li class="text-neutral-500 text-sm md:text-base">Kognitive Fähigkeiten,</li>
+          <li class="text-neutral-500 text-sm md:text-base mt-1">Emotionale und soziale Kompetenzen,</li>
+          <li class="text-neutral-500 text-sm md:text-base mt-1">Wortschatz,</li>
+          <li class="text-neutral-500 text-sm md:text-base mt-1">Konzentrationsfähigkeit,</li>
+          <li class="text-neutral-500 text-sm md:text-base mt-1">Vorstellungsvermögen und Fantasie,</li>
+          <li class="text-neutral-500 text-sm md:text-base mt-1">Kreativität.</li>
+          <li class="text-neutral-500 text-sm md:text-base mt-1">Außerdem werden die Kinder selbstbewusster und lernt zudem, sich in andere hineinzuversetzen (Empathie).</li>
+          <li class="text-neutral-500 text-sm md:text-base mt-1">Sollte ein Kind vorher noch Angst vor Hunden gehabt haben, wird diese abgebaut, was das Kind noch
+            mutiger
+            macht.
+          </li>
+        </ul>
+        <h2 class="text-neutral-800 text-xl md:text-2xl mt-2">Um:</h2>
+        <ul>
+          <li class="text-neutral-500 text-sm md:text-base">Ihre Lesefähigkeiten zu verbessern,</li>
+          <li class="text-neutral-500 text-sm md:text-base mt-1">die Angst vorm Vorlesen zu verlieren,</li>
+          <li class="text-neutral-500 text-sm md:text-base mt-1">bessere Noten in der Schule zu erhalten,</li>
+          <li class="text-neutral-500 text-sm md:text-base mt-1">die Freude am Bücherlesen zu entdecken.</li>
+        </ul>
+      </div>
+    </app-section-wrapper>
+    <app-section-wrapper id="verein">
+      <div class="h-full w-full md:w-1/2 flex flex-col items-start justify-center p-4">
+        <h2 class="text-neutral-800 text-xl md:text-2xl mt-2">Sonderprojekt "Lesehund" (Lesehun.de): </h2>
+        <p class="text-neutral-500 text-sm md:text-base mt-1">Hier liest nur ein Kind einem Hund in Anwesenheit von einer Betreuungsperson vor.</p>
+        <p class="text-neutral-500 text-sm md:text-base mt-1">Um dieses Projekt qualifiziert anbieten zu können, sind wir dem Verein Lesehund von Kimberly Ann
+          Kistler-Grobholz in München beigetreten und haben die erforderliche Qualifikation erworben.</p>
+        <p class="text-neutral-500 text-sm md:text-base mt-1">Das Projekt Lesehund gab es als erstes Projekt für Leseförderung mit Hund im deutschsprachigen Raum (2008).
+          Es ist ein Partnerprojekt von R.E.A.D. &#174; (Reading Education Assistance Dogs) U.S.A.</p>
+      </div>
+      <div class="h-full w-full md:w-1/2 flex flex-col items-center justify-center p-4">
+        <img src="/assets/img.png" class="w-[250px] h-[250px]">
+      </div>
+    </app-section-wrapper>
   </main>
 </div>
 

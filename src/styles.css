@@ -12,14 +12,21 @@
 
     /* Hide scrollbar for IE, Edge and Firefox */
     .no-scrollbar {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
     }
   }
 }
 
-html, body { height: 100%; background-color: #333333}
-body { margin: 0; font-family: Montserrat, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%;
+  background-color: #333333
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat, "Helvetica Neue", sans-serif;
+}
 
 /* Change Autocomplete styles in Chrome*/
 input:-webkit-autofill,
