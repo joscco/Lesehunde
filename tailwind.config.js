@@ -6,7 +6,14 @@ module.exports = {
     "./src/app/**/*.{html,ts}"
   ],
   theme: {
-    extend: {},
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      'hundwhite': '#fcf5ed',
+      'hundred': '#cf5a67',
+      'hundblack': '#000000',
+      'hundorange': '#f5c096',
+    },
   },
   variants: {
     textColor: ['active-router-link']

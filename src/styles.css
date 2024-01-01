@@ -20,12 +20,17 @@
 
 html, body {
   height: 100%;
-  background-color: #fafafa
+  background-color: #fcf5ed
 }
 
 body {
   margin: 0;
-  font-family: Montserrat, "Helvetica Neue", sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.archivo {
+  font-weight: bolder;
+  font-family: Archivo, "Helvetica Neue", sans-serif;
 }
 
 /* Change Autocomplete styles in Chrome*/

@@ -4,11 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-section-wrapper',
   templateUrl: './section-wrapper.component.html'
 })
-export class SectionWrapperComponent implements OnInit {
+export class SectionWrapperComponent {
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }
