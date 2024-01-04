@@ -9,10 +9,11 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      'hundwhite': '#fcf5ed',
-      'hundred': '#cf5a67',
-      'hundblack': '#000000',
-      'hundorange': '#f5c096',
+      'hundwhite': '#f6f1e8',
+      'hundorange': '#f3bc48',
+      'hundred': '#d54022',
+      'hundgrey': '#272727',
+      'hundblack': '#131d28',
     },
   },
   variants: {
