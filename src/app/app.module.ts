@@ -10,14 +10,15 @@ import {MatInputModule} from "@angular/material/input";
 import {MatIconModule} from "@angular/material/icon";
 import { SectionWrapperComponent } from './section-wrapper/section-wrapper.component';
 import { ContentWrapperComponent } from './content-wrapper/content-wrapper.component';
+import {ImageWrapperComponent} from "./image-wrapper/image-wrapper.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SectionWrapperComponent,
-    ContentWrapperComponent
-
+    ContentWrapperComponent,
+    ImageWrapperComponent
   ],
   imports: [
     BrowserModule,
