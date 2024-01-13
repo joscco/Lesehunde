@@ -1,14 +1,15 @@
 <nav class="hidden sm:flex w-full h-16 px-4 fixed flex-row">
   <div class="w-full h-full flex flex-row flex-wrap items-center justify-between mx-auto">
-    <a href="#start" class="py-2 px-3 text-lg rounded bg-hundwhite text-hundblack transition"
-       [ngClass]="{'bg-hundblack text-hundwhite': currentSection === 'start'}">Start</a>
+    <a href="#start" class="py-2 px-3 text-lg rounded transition"
+       [ngClass]="{'bg-hundblack text-hundwhite': currentSection === 'start', 'bg-hundwhite text-hundblack': currentSection !== 'start'}"
+    >Start</a>
     <div class="gap-3 flex flex-row">
-      <a href="#wir" class="py-2 px-3 text-lg rounded bg-hundwhite text-hundblack transition"
-         [ngClass]="{'bg-hundblack text-hundwhite': currentSection === 'wir'}">Über uns</a>
-      <a href="#projekt" class="py-2 px-3 text-lg rounded bg-hundwhite text-hundblack transition"
-         [ngClass]="{'bg-hundblack text-hundwhite': currentSection === 'projekt'}">Das Projekt</a>
-      <a href="#kontakt" class="py-2 px-3 text-lg rounded bg-hundwhite text-hundblack transition"
-         [ngClass]="{'bg-hundblack text-hundwhite': currentSection === 'kontakt'}">Kontakt</a>
+      <a href="#wir" class="py-2 px-3 text-lg rounded transition"
+         [ngClass]="{'bg-hundblack text-hundwhite': currentSection === 'wir', 'bg-hundwhite text-hundblack': currentSection !== 'wir'}">Über uns</a>
+      <a href="#projekt" class="py-2 px-3 text-lg rounded transition"
+         [ngClass]="{'bg-hundblack text-hundwhite': currentSection === 'projekt', 'bg-hundwhite text-hundblack': currentSection !== 'projekt'}">Das Projekt</a>
+      <a href="#kontakt" class="py-2 px-3 text-lg rounded transition"
+         [ngClass]="{'bg-hundblack text-hundwhite': currentSection === 'kontakt', 'bg-hundwhite text-hundblack': currentSection !== 'kontakt'}">Kontakt</a>
     </div>
   </div>
 </nav>
