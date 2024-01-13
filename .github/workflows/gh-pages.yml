@@ -30,3 +30,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: dist/lesehunde
           enable_jekyll: true
+
+      - name: Copy index to 404.html
+        run: cp index.html 404.html
