@@ -1,0 +1,168 @@
+<nav class="hidden sm:flex w-full h-16 px-4 fixed flex-row">
+  <div class="w-full h-full flex flex-row flex-wrap items-center justify-between mx-auto">
+    <a href="#start" class="py-2 px-3 text-lg rounded bg-hundwhite text-hundblack transition"
+       [ngClass]="{'bg-hundblack text-hundwhite': currentSection === 'start'}">Start</a>
+    <div class="gap-3 flex flex-row">
+      <a href="#wir" class="py-2 px-3 text-lg rounded bg-hundwhite text-hundblack transition"
+         [ngClass]="{'bg-hundblack text-hundwhite': currentSection === 'wir'}">Über uns</a>
+      <a href="#projekt" class="py-2 px-3 text-lg rounded bg-hundwhite text-hundblack transition"
+         [ngClass]="{'bg-hundblack text-hundwhite': currentSection === 'projekt'}">Das Projekt</a>
+      <a href="#kontakt" class="py-2 px-3 text-lg rounded bg-hundwhite text-hundblack transition"
+         [ngClass]="{'bg-hundblack text-hundwhite': currentSection === 'kontakt'}">Kontakt</a>
+    </div>
+  </div>
+</nav>
+<main class="h-full w-full overflow-y-scroll scroll-smooth" scrollSpy [spiedTags]="['APP-SECTION-WRAPPER']"
+      (sectionChange)="onSectionChange($event)">
+  <app-section-wrapper id="start">
+    <content-wrapper class="bg-hundwhite">
+      <div class="flex flex-col gap-3 justify-center items-center">
+        <h1 class="archivo text-5xl text-hundblack">Willkommen</h1>
+        <p class="text-xs md:text-sm text-justify text-hundred">
+          ... bei den Lesehund-Teams im Dreiländereck Hessen / Rheinland-Pfalz / NRW.
+        </p>
+        <p class="text-xs md:text-sm text-justify text-hundred">
+          Leseschwächen sind selbst in der heutigen Zeit keine Seltenheit.
+          Sie erschweren den Zugang zu Bildung und mindern im schlimmsten Fall die beruflichen Chancen.
+          Die Ursachen liegen häufig in der Unsicherheit und Angst der Betroffenen, laut vorzulesen.
+        </p>
+      </div>
+      <image-wrapper path="assets/BoyAndDog.png"></image-wrapper>
+    </content-wrapper>
+    <content-wrapper class="bg-hundred">
+      <image-wrapper path="assets/WerteDog.png"></image-wrapper>
+      <div class="flex flex-col gap-3 justify-center items-center">
+        <h1 class="archivo text-5xl text-hundorange">Hunde werten nicht</h1>
+        <p class="text-xs md:text-sm text-justify text-hundblack">
+          Unsere qualifizierten Lesehund-Teams unterstützen Kinder bei der Verbesserung ihrer Lesefähigkeit.
+          Die Hunde sind geduldig, stellen keine Forderungen und bewerten nicht, was es den Kindern ermöglicht,
+          ihrem eigenen Tempo entsprechend vorzulesen und das Treffen mit einem guten Gefühl verlassen zu können.
+        </p>
+      </div>
+    </content-wrapper>
+  </app-section-wrapper>
+  <app-section-wrapper id="wir">
+    <content-wrapper class="bg-hundorange">
+      <div class="flex justify-center items-center w-[120px] sm:w-[140px] md:w-[160px] lg:w-[180px]">
+        <img src="assets/LogoLesehundeDrei.png"/>
+      </div>
+      <div class="flex flex-col gap-3 justify-center items-center">
+        <h1 class="archivo text-5xl text-hundwhite">Über uns</h1>
+        <p class="text-xs md:text-sm text-justify text-hundblack">
+          Die waldreiche und hügelige Landschaft des Lahn-Dill-Kreises und des angrenzenden Westerwaldes und
+          Siegerlandes ist das Zuhause von uns und unseren Fellnasen.
+        </p>
+        <p class="text-xs md:text-sm text-justify text-hundblack">
+          Wir engagieren uns schon seit fast 20 Jahren ehrenamtlich mit unseren Besuchshunden und bieten dieses neue
+          Lesehund-Programm nun gezielt separat an.
+          Um dies qualifiziert tun zu können, sind wir dem Verein Lesehund von Kimberly Ann Kistler-Grobholz in
+          München beigetreten.
+        </p>
+        <p class="text-xs md:text-sm text-justify text-hundblack">
+          Wir verfügen über Genehmigungen der Länder Hessen und NRW zu §11. Darüber hinaus ist eine Prüferin für
+          Sachkunde und Hundeführerschein, sowie anerkannte Sachverständige LHundG NRW Teil unseres Teams.
+        </p>
+      </div>
+    </content-wrapper>
+    <content-wrapper class="bg-hundwhite">
+      <div class="flex flex-col gap-3 justify-center items-center">
+        <h1 class="archivo text-5xl text-hundblack">Wir...</h1>
+        <ul class="text-xs md:text-sm text-left text-hundred">
+          <li>… sind eine Gruppe von ehrenamtlich arbeitenden Enthusiasten, die sich auf die Fahne geschrieben haben,
+            Kinder mit Leseschwächen mit Hilfe unserer Hunde zu unterstützen.
+          </li>
+          <li>… sind Mensch-Hund-Teams mit Erfahrungen im Besuchshundedienst.</li>
+          <li>… sind Mitglied im Verein lesehund.de und haben die entsprechende Zusatzausbildung absolviert, so dass
+            wir
+            auch ausbilden dürfen.
+          </li>
+          <li>… haben uns im Dreiländereck Hessen/Rheinland-Pfalz/NRW neu organisiert und würden uns über Zuwachs
+            mächtig freuen!
+          </li>
+        </ul>
+      </div>
+      <image-wrapper path="assets/we.png"></image-wrapper>
+    </content-wrapper>
+    <content-wrapper class="bg-hundred">
+      <div class="flex flex-col gap-3 justify-center items-center">
+        <h1 class="archivo text-5xl text-hundorange">Lesehund</h1>
+        <p class="text-xs md:text-sm text-justify text-hundblack">
+          Das Projekt Lesehund gab es als erstes Projekt für Leseförderung mit Hund im deutschsprachigen Raum
+          (Einführung 2008). 2014 trat es R.E.A.D. (Reading Eductation Assistance Dogs ®) U.S.A. als Partner/Affiliate
+          bei und wurde 2017 ein eigenständiger Verein. </p>
+      </div>
+      <div class="flex justify-center items-center w-[180px] sm:w-[220px] md:w-[260px] lg:w-[280px]">
+        <img src="assets/lesehund.png">
+      </div>
+    </content-wrapper>
+    <content-wrapper class="bg-hundorange">
+      <div class="flex justify-center items-center w-[180px] sm:w-[220px] md:w-[230px] lg:w-[250px]">
+        <img src="assets/dogAssistance.png">
+      </div>
+      <div class="flex flex-col gap-3 justify-center items-center">
+        <h1 class="archivo text-5xl text-hundwhite">R.E.A.D.</h1>
+        <p class="text-xs md:text-sm text-justify text-hundblack">
+          Als Teil von R.E.A.D. sind wir führend in Leseförderung mit Hunden. Alle unsere Teams sind Mitglied im
+          Lesehund-Verein und können die entsprechenden Qualifikationen vorweisen. Unser Service wird als
+          tiergestützte
+          Aktivität (engl. AAA, animal assisted activities) eingestuft.
+        </p>
+      </div>
+    </content-wrapper>
+  </app-section-wrapper>
+  <app-section-wrapper id="projekt">
+    <content-wrapper class="bg-hundwhite">
+      <div class="flex flex-col gap-3 justify-center items-center">
+        <h1 class="archivo text-5xl text-hundblack">Das Projekt</h1>
+        <p class="text-xs md:text-sm text-justify text-hundred">
+          Das R.E.A.D. Programm ist auf die Bedürfnisse der Kinder von Vorschule bis zur 3. Klasse zugeschnitten (4-8
+          Jahre). Bis zum Ende der 3. Klasse lernen die meisten Kinder lesen. Mit Beginn der 4. Klasse fangen sie an
+          zu lesen, um zu lernen.
+        </p>
+        <p class="text-xs md:text-sm text-justify text-hundred">
+          Durch den Einsatz von Lesehunden werden Kinder selbstbewusster und lernen zudem, sich in andere
+          hineinzuversetzen (Empathie). Sollte ein Kind vorher noch Angst vor Hunden gehabt haben, wird diese nach und
+          nach abgebaut, was das Kind noch mutiger macht. Darüber hinaus werden u.a. der Wortschatz, die kognitiven
+          Fähigkeiten, die Konzentrationsfähigkeit sowie emotionale und soziale Kompetenzen gefördert.
+        </p>
+      </div>
+      <image-wrapper path="assets/project.png"></image-wrapper>
+    </content-wrapper>
+    <content-wrapper class="bg-hundred">
+      <div class="flex flex-col gap-3 justify-center items-center">
+        <h1 class="archivo text-5xl text-hundorange">Der Rahmen</h1>
+        <p class="text-xs md:text-sm text-justify text-hundblack">
+          Unser Angebot richtet sich neben der Vor- und Grundschule auch an außerschulische Einrichtungen
+          (Bibliotheken,
+          Horte, etc.). Bei wöchentlichen Treffen liest ein Kind dem Hund ca. 20 Minuten vor. Die maximale
+          Teilnehmerzahl pro Sitzung sollte hierbei drei Kinder nicht überschreiten.
+        </p>
+        <p class="text-xs md:text-sm text-justify text-hundblack">
+          Wir möchten besonders Kinder ansprechen, die bereit sind, dem Lesehund vorzulesen, die schüchtern oder
+          unruhig
+          sind oder Deutsch als Zweit-/Fremdsprache lernen.
+        </p>
+        <h2 class="archivo text-xl text-hundwhite self-start">Wichtig:</h2>
+        <p class="text-xs md:text-sm text-justify text-hundblack">
+          Das Projekt Lesehund ist kein Leseunterricht, sondern eine Lernhilfe.
+          Es ist nicht so wichtig, wie die Kids lesen, sondern wie sie sich fühlen, während sie lesen.
+        </p>
+      </div>
+    </content-wrapper>
+  </app-section-wrapper>
+  <app-section-wrapper [doublePage]="true" id="kontakt">
+    <content-wrapper class="bg-hundorange">
+      <image-wrapper path="assets/contact.png"></image-wrapper>
+      <div class="flex flex-col gap-3 justify-center items-center">
+        <h2 class="archivo text-5xl text-hundwhite">Kontakt</h2>
+        <p class="text-xs md:text-sm text-justify text-hundblack">Sie interessieren sich für eine Mitgliedschaft,
+          wollen
+          unseren kostenlosen Service buchen oder wünschen weitere Informationen? Dann kontaktieren Sie uns gerne
+          per</p>
+        <a class="archivo text-3xl text-hundred" href="mailto:hallo@lesehun.de">> MAIL</a>
+        <a class="archivo text-xl text-hundblack" routerLink="/impressum">> Zum Impressum</a>
+      </div>
+    </content-wrapper>
+  </app-section-wrapper>
+
+</main>
