@@ -32,7 +32,6 @@ jobs:
           enable_jekyll: true
 
       - name: Copy index to 404.html
-        uses: actions/checkout@v3
         env:
           TARGET_BRANCH: 'gh-pages'
         run: |
