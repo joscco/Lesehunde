@@ -32,4 +32,15 @@ jobs:
           enable_jekyll: true
 
       - name: Copy index to 404.html
-        run: cp index.html 404.html
+        uses: actions/checkout@v3
+        env:
+          TARGET_BRANCH: 'gh-pages'
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git fetch                         # fetch branches
+          git checkout $TARGET_BRANCH       # checkout to your branch
+          cp index.html 404.html
+          git add -A
+          git diff-index --quiet HEAD ||  git commit -am "deploy files"  # commit to the repository (ignore if no modification)
+          git push origin $TARGET_BRANCH # push to remote branch
